@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+  background-color: #f8f9fa; /* Light background */
+  font-family: 'Arial', sans-serif; /* Clean, modern font */
+  color: #343a40; /* Dark text */
+}
+
+h1, h2, h3 {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Customize button color */
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow to cards */
+  border: none; /* Remove borders for a cleaner look */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Add hover effect */
+  transition: all 0.3s ease;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar a {
+  color: #fff !important;
+}
+
+footer {
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero {
+  background-image: url('https://source.unsplash.com/1600x900/?office,work');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow to cards */
+  border: none; /* Remove borders for a cleaner look */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Add hover effect */
+  transition: all 0.3s ease;
+}
