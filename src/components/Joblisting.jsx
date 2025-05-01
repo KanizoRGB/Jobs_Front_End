@@ -15,7 +15,12 @@ function Joblisting() {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4 text-center">Available Jobs</h2>
+      <h1 className="mb-4 text-center" style={{fontSize:"80px"}}>Available Jobs</h1>
+      <div>
+        <label htmlFor="search" className="form-label me-2 fw-bold" style={{fontSize:"25px"}}>Search Jobs: </label>
+        <input type="text" className='w-50 rounded p-2 m-3' name='search' placeholder='Search by title, company, or location' />
+        
+      </div>
       <div className="row">
         {jobs.map((job, index) => (
           <div key={index} className="col-md-4 mb-3">
