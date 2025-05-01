@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export const jobs = [
+export let jobs = [
   {title: 'Software Engineer', company: 'Tech Corp', location: 'New York', skills:['JavaScript', 'React', 'Node.js'], description: 'Develop and maintain web applications.'},
   {title: 'Data Analyst', company: 'Data Inc', location: 'San Francisco', skills:['Python', 'SQL', 'Excel'], description: 'Analyze and interpret complex data sets.'},
   {title: 'Product Manager', company: 'Product Co', location: 'Remote', skills:['Agile', 'Scrum', 'Communication'], description: 'Lead product development and strategy.'},
@@ -12,12 +12,6 @@ export const jobs = [
 
 function Joblisting() {
 
-  function publishJob() {
-    // Logic to publish a job
-    console.log("Job published!");
-  }
-
-    
 
   return (
     <div className="container mt-5">
@@ -38,7 +32,7 @@ function Joblisting() {
         ))}
       </div>
       <div>
-        <Link to="/publish-job" className="btn btn-primary mt-4 mb-4" onClick={publishJob}>Publish a Job</Link>
+        <Link to="/publish-job" className="btn btn-primary mt-4 mb-4">Publish a Job?</Link>
       </div>
     </div>
   );
